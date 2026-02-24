@@ -47,10 +47,10 @@ export async function GET() {
   try {
     // Fetch de los dos CSVs
     const [rankRes, leyRes] = await Promise.all([
-      fetch(URL_RANKING,  { cache: 'no-store' }),
-      fetch(URL_LEYENDA,  { cache: 'no-store' }),
-    ])
-
+  fetch(URL_RANKING,  { cache: 'no-store', redirect: 'follow' }),
+  fetch(URL_LEYENDA,  { cache: 'no-store', redirect: 'follow' }),
+])
+    
     const rankText = await rankRes.text()
     const leyText  = await leyRes.text()
 
