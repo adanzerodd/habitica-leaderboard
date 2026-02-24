@@ -4,8 +4,8 @@ import { Resvg } from "npm:@resvg/resvg-js";
 // ================================================
 // 🔧 CAMBIA ESTAS DOS URLs POR LAS TUYAS
 // ================================================
-const URL_RANKING = "PEGA_AQUI_LA_URL_CSV_DE_RANKING";
-const URL_LEYENDA = "PEGA_AQUI_LA_URL_CSV_DE_LEYENDAMENSUAL";
+const URL_RANKING = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRrPzqN4xJyotgaRxXL4HWSrCb-7MGOknVCQeJ9qTyUQgc97lFIo1m8v7QNETdAFIEmBh6pbdcWogdD/pub?gid=140176551&single=true&output=csv";
+const URL_LEYENDA = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRrPzqN4xJyotgaRxXL4HWSrCb-7MGOknVCQeJ9qTyUQgc97lFIo1m8v7QNETdAFIEmBh6pbdcWogdD/pub?gid=1859981877&single=true&output=csv";
 // ================================================
 
 function parseCSV(text: string): Record<string, string>[] {
