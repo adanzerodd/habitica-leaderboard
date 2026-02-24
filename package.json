@@ -1,0 +1,43 @@
+{
+  "name": "habitica-leaderboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
+```
+
+Guarda con **"Commit changes"**.
+
+---
+
+## 🚀 ETAPA 3 — Desplegar en Vercel
+
+### Paso 3.1 — Conectar GitHub con Vercel
+
+1. Ve a **[vercel.com](https://vercel.com)** e inicia sesión con tu cuenta de GitHub
+2. Haz clic en **"Add New..."** → **"Project"**
+3. Verás tu repositorio `habitica-leaderboard`. Haz clic en **"Import"**
+4. No necesitas cambiar nada en la configuración — Vercel detecta Next.js automáticamente
+5. Haz clic en **"Deploy"**
+6. Espera 1-2 minutos. Verás una pantalla con confetti 🎉 cuando termine
+
+---
+
+### Paso 3.2 — Obtener tu URL
+
+Cuando termine el deploy, Vercel te mostrará tu URL. Será algo como:
+```
+https://habitica-leaderboard-abc123.vercel.app
+```
+
+Tu imagen estará en:
+```
+https://habitica-leaderboard-abc123.vercel.app/api/leaderboard
